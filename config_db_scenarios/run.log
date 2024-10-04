@@ -1,0 +1,550 @@
+# vsim work.top "+UVM_VERBOSITY=UVM_HIGH" "+UVM_TESTNAME=phases_test" "+count_no=50" -l run.log 
+# Start time: 18:45:44 on Oct 02,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /top File: top.sv Line: 22
+# Loading C:/questasim64_10.7c/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test phases_test...
+# UVM_INFO phases_test.sv(14) @ 0: uvm_test_top [phases_test] MESSAGE FROM TEST BUILD PHASE WITH NONE
+# UVM_INFO environment.sv(17) @ 0: uvm_test_top.env_h [env_h] MESSAGE IS FROM ENVIRONMENT BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(17) @ 0: uvm_test_top.env_h.agh_2 [agent] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(19) @ 0: uvm_test_top.env_h.agh_2 [] MESSAGE TO BE WRITTEN
+# UVM_INFO agent.sv(21) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(22) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(23) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(24) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(25) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO mem_driver.sv(16) @ 0: uvm_test_top.env_h.agh_2.drv_h [DRIVER] Config_db getting)
+# UVM_INFO mem_driver.sv(19) @ 0: uvm_test_top.env_h.agh_2.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH NONE
+# UVM_INFO mem_driver.sv(20) @ 0: uvm_test_top.env_h.agh_2.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH LOW
+# UVM_INFO mem_driver.sv(21) @ 0: uvm_test_top.env_h.agh_2.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH MEDIUM
+# UVM_INFO mem_driver.sv(22) @ 0: uvm_test_top.env_h.agh_2.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH HIGH
+# UVM_INFO monitor.sv(17) @ 0: uvm_test_top.env_h.agh_2.mon_h [monitor] message is from monitor build phase with none
+# UVM_INFO monitor.sv(18) @ 0: uvm_test_top.env_h.agh_2.mon_h [MONITOR] MESSAGE IS FROM MONITOR BUILD PHASE WITH NONE
+# UVM_INFO monitor.sv(19) @ 0: uvm_test_top.env_h.agh_2.mon_h [MONITOR] MESSAGE IS FROM MONITOR BUILD PHASE WITH LOW
+# UVM_INFO agent.sv(17) @ 0: uvm_test_top.env_h.agt_h [agent] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(19) @ 0: uvm_test_top.env_h.agt_h [] MESSAGE TO BE WRITTEN
+# UVM_INFO agent.sv(21) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(22) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(23) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(24) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(25) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO mem_driver.sv(16) @ 0: uvm_test_top.env_h.agt_h.drv_h [DRIVER] Config_db getting)
+# UVM_INFO mem_driver.sv(19) @ 0: uvm_test_top.env_h.agt_h.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH NONE
+# UVM_INFO mem_driver.sv(20) @ 0: uvm_test_top.env_h.agt_h.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH LOW
+# UVM_INFO mem_driver.sv(21) @ 0: uvm_test_top.env_h.agt_h.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH MEDIUM
+# UVM_INFO mem_driver.sv(22) @ 0: uvm_test_top.env_h.agt_h.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH HIGH
+# UVM_INFO monitor.sv(17) @ 0: uvm_test_top.env_h.agt_h.mon_h [monitor] message is from monitor build phase with none
+# UVM_INFO monitor.sv(18) @ 0: uvm_test_top.env_h.agt_h.mon_h [MONITOR] MESSAGE IS FROM MONITOR BUILD PHASE WITH NONE
+# UVM_INFO monitor.sv(19) @ 0: uvm_test_top.env_h.agt_h.mon_h [MONITOR] MESSAGE IS FROM MONITOR BUILD PHASE WITH LOW
+# UVM_INFO agent_1.sv(15) @ 0: uvm_test_top.env_h.agt_h_1 [AGENT_1] AGENT_1 BUILD_PHASE
+# UVM_INFO monitor_1.sv(10) @ 0: uvm_test_top.env_h.agt_h_1.mon_h_1 [MONITOR_1] MONITOR_1 BUILD PHASE
+# UVM_INFO monitor_1.sv(11) @ 0: uvm_test_top.env_h.agt_h_1.mon_h_1 [MONITOR_1] MONITOR_1 BUILD PHASE
+# UVM_INFO monitor_1.sv(12) @ 0: uvm_test_top.env_h.agt_h_1.mon_h_1 [MONITOR_1] MONITOR_1 BUILD PHASE
+# UVM_INFO monitor_1.sv(13) @ 0: uvm_test_top.env_h.agt_h_1.mon_h_1 [MONITOR_1] MONITOR_1 BUILD PHASE
+# UVM_INFO agent.sv(31) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM AGENT CONNECT PHASE WITH MEDIUM
+# UVM_INFO agent.sv(31) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM AGENT CONNECT PHASE WITH MEDIUM
+# UVM_INFO agent_1.sv(21) @ 0: uvm_test_top.env_h.agt_h_1 [agt_h_1] MESSAGE FROM AGENT_1
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               phases_test             -     @471 
+#   env_h                    environment             -     @478 
+#     agh_2                  agent                   -     @499 
+#       drv_h                mem_driver              -     @510 
+#         rsp_port           uvm_analysis_port       -     @525 
+#         seq_item_port      uvm_seq_item_pull_port  -     @517 
+#       mon_h                monitor                 -     @642 
+#       sqr_h                mem_sequencer           -     @533 
+#         rsp_export         uvm_analysis_export     -     @540 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @634 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     agt_h                  agent                   -     @485 
+#       drv_h                mem_driver              -     @651 
+#         rsp_port           uvm_analysis_port       -     @666 
+#         seq_item_port      uvm_seq_item_pull_port  -     @658 
+#       mon_h                monitor                 -     @783 
+#       sqr_h                mem_sequencer           -     @674 
+#         rsp_export         uvm_analysis_export     -     @681 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @775 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     agt_h_1                agent_1                 -     @492 
+#       mon_h_1              monitor_1               -     @792 
+# --------------------------------------------------------------
+# 
+# UVM_INFO environment.sv(23) @ 0: uvm_test_top.env_h [uvm_test_top.env_h] END OF ELABORATION
+# UVM_INFO environment.sv(24) @ 0: uvm_test_top.env_h [ENVIRONMENT] ENVIRONMENT FUNCTION
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] End Of Elaboration
+# UVM_INFO phases_test.sv(19) @ 0: uvm_test_top [TEST] message is from test run_phase with none
+# UVM_INFO monitor.sv(25) @ 0: uvm_test_top.env_h.agt_h.mon_h [monitor_runphase] printing from monitor from uvm low 50
+# UVM_INFO mem_driver.sv(30) @ 0: uvm_test_top.env_h.agt_h.drv_h [driver_runphase] printing from driver from uvm low = 50
+# UVM_INFO monitor.sv(25) @ 0: uvm_test_top.env_h.agh_2.mon_h [monitor_runphase] printing from monitor from uvm low 50
+# UVM_INFO mem_driver.sv(30) @ 0: uvm_test_top.env_h.agh_2.drv_h [driver_runphase] printing from driver from uvm low = 50
+# ----------------------------------------------------------------------------------------
+# Name                           Type           Size  Value                               
+# ----------------------------------------------------------------------------------------
+# req                            sequence_item  -     @808                                
+#   addr                         integral       4     'd3                                 
+#   data                         integral       4     11                                  
+#   wr_rd                        integral       4     'd0                                 
+#   begin_time                   time           64    0                                   
+#   depth                        int            32    'd2                                 
+#   parent sequence (name)       string         5     seq_h                               
+#   parent sequence (full name)  string         36    uvm_test_top.env_h.agt_h.sqr_h.seq_h
+#   sequencer                    string         30    uvm_test_top.env_h.agt_h.sqr_h      
+# ----------------------------------------------------------------------------------------
+# UVM_INFO mem_driver.sv(36) @ 1: uvm_test_top.env_h.agt_h.drv_h [DRIVER] MESSAGE IS FROM DRIVER RUN PHASE WITH NONE
+# UVM_INFO mem_driver.sv(37) @ 1: uvm_test_top.env_h.agt_h.drv_h [DRIVER] MESSAGE IS FROM DRIVER RUN PHASE WITH LOW
+# UVM_INFO mem_driver.sv(30) @ 1: uvm_test_top.env_h.agt_h.drv_h [driver_runphase] printing from driver from uvm low = 50
+# ----------------------------------------------------------------------------------------
+# Name                           Type           Size  Value                               
+# ----------------------------------------------------------------------------------------
+# req                            sequence_item  -     @862                                
+#   addr                         integral       4     'd5                                 
+#   data                         integral       4     13                                  
+#   wr_rd                        integral       4     'd0                                 
+#   begin_time                   time           64    1                                   
+#   depth                        int            32    'd2                                 
+#   parent sequence (name)       string         5     seq_h                               
+#   parent sequence (full name)  string         36    uvm_test_top.env_h.agh_2.sqr_h.seq_h
+#   sequencer                    string         30    uvm_test_top.env_h.agh_2.sqr_h      
+# ----------------------------------------------------------------------------------------
+# UVM_INFO mem_driver.sv(36) @ 2: uvm_test_top.env_h.agh_2.drv_h [DRIVER] MESSAGE IS FROM DRIVER RUN PHASE WITH NONE
+# UVM_INFO mem_driver.sv(37) @ 2: uvm_test_top.env_h.agh_2.drv_h [DRIVER] MESSAGE IS FROM DRIVER RUN PHASE WITH LOW
+# UVM_INFO mem_driver.sv(30) @ 2: uvm_test_top.env_h.agh_2.drv_h [driver_runphase] printing from driver from uvm low = 50
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 2: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   59
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# []     2
+# [AGENT]    12
+# [AGENT_1]     1
+# [DRIVER]    14
+# [ENVIRONMENT]     1
+# [MONITOR]     4
+# [MONITOR_1]     4
+# [Questa UVM]     3
+# [RNTST]     1
+# [TEST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [agent]     2
+# [agt_h_1]     1
+# [driver_runphase]     4
+# [env_h]     1
+# [monitor]     2
+# [monitor_runphase]     2
+# [phases_test]     1
+# [uvm_test_top.env_h]     1
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 2 ns  Iteration: 60  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 18:50:09 on Oct 02,2024
+# vlog -reportprogress 300 top.sv 
+# ** Note: (vlog-2286) top.sv(2): Using implicit +incdir+C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 18:50:10 on Oct 02,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 18:50:12 on Oct 02,2024, Elapsed time: 0:04:28
+# Errors: 0, Warnings: 1
+# vsim work.top "+UVM_VERBOSITY=UVM_HIGH" "+UVM_TESTNAME=phases_test" "+count_no=50" -l run.log 
+# Start time: 18:50:12 on Oct 02,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /top File: top.sv Line: 22
+# Loading C:/questasim64_10.7c/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test phases_test...
+# UVM_INFO phases_test.sv(14) @ 0: uvm_test_top [phases_test] MESSAGE FROM TEST BUILD PHASE WITH NONE
+# UVM_INFO environment.sv(17) @ 0: uvm_test_top.env_h [env_h] MESSAGE IS FROM ENVIRONMENT BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(17) @ 0: uvm_test_top.env_h.agh_2 [agent] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(19) @ 0: uvm_test_top.env_h.agh_2 [] MESSAGE TO BE WRITTEN
+# UVM_INFO agent.sv(21) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(22) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(23) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(24) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(25) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO mem_driver.sv(16) @ 0: uvm_test_top.env_h.agh_2.drv_h [DRIVER] Config_db getting)
+# UVM_INFO mem_driver.sv(19) @ 0: uvm_test_top.env_h.agh_2.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH NONE
+# UVM_INFO mem_driver.sv(20) @ 0: uvm_test_top.env_h.agh_2.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH LOW
+# UVM_INFO mem_driver.sv(21) @ 0: uvm_test_top.env_h.agh_2.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH MEDIUM
+# UVM_INFO mem_driver.sv(22) @ 0: uvm_test_top.env_h.agh_2.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH HIGH
+# UVM_INFO monitor.sv(17) @ 0: uvm_test_top.env_h.agh_2.mon_h [monitor] message is from monitor build phase with none
+# UVM_INFO monitor.sv(18) @ 0: uvm_test_top.env_h.agh_2.mon_h [MONITOR] MESSAGE IS FROM MONITOR BUILD PHASE WITH NONE
+# UVM_INFO monitor.sv(19) @ 0: uvm_test_top.env_h.agh_2.mon_h [MONITOR] MESSAGE IS FROM MONITOR BUILD PHASE WITH LOW
+# UVM_ERROR mem_sequencer.sv(10) @ 0: uvm_test_top.env_h.agh_2.sqr_h [uvm_test_top.env_h.agh_2.sqr_h] not retriving the config_db
+# UVM_INFO agent.sv(17) @ 0: uvm_test_top.env_h.agt_h [agent] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(19) @ 0: uvm_test_top.env_h.agt_h [] MESSAGE TO BE WRITTEN
+# UVM_INFO agent.sv(21) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(22) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(23) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(24) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(25) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO mem_driver.sv(16) @ 0: uvm_test_top.env_h.agt_h.drv_h [DRIVER] Config_db getting)
+# UVM_INFO mem_driver.sv(19) @ 0: uvm_test_top.env_h.agt_h.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH NONE
+# UVM_INFO mem_driver.sv(20) @ 0: uvm_test_top.env_h.agt_h.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH LOW
+# UVM_INFO mem_driver.sv(21) @ 0: uvm_test_top.env_h.agt_h.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH MEDIUM
+# UVM_INFO mem_driver.sv(22) @ 0: uvm_test_top.env_h.agt_h.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH HIGH
+# UVM_INFO monitor.sv(17) @ 0: uvm_test_top.env_h.agt_h.mon_h [monitor] message is from monitor build phase with none
+# UVM_INFO monitor.sv(18) @ 0: uvm_test_top.env_h.agt_h.mon_h [MONITOR] MESSAGE IS FROM MONITOR BUILD PHASE WITH NONE
+# UVM_INFO monitor.sv(19) @ 0: uvm_test_top.env_h.agt_h.mon_h [MONITOR] MESSAGE IS FROM MONITOR BUILD PHASE WITH LOW
+# UVM_ERROR mem_sequencer.sv(10) @ 0: uvm_test_top.env_h.agt_h.sqr_h [uvm_test_top.env_h.agt_h.sqr_h] not retriving the config_db
+# UVM_INFO agent_1.sv(15) @ 0: uvm_test_top.env_h.agt_h_1 [AGENT_1] AGENT_1 BUILD_PHASE
+# UVM_INFO monitor_1.sv(10) @ 0: uvm_test_top.env_h.agt_h_1.mon_h_1 [MONITOR_1] MONITOR_1 BUILD PHASE
+# UVM_INFO monitor_1.sv(11) @ 0: uvm_test_top.env_h.agt_h_1.mon_h_1 [MONITOR_1] MONITOR_1 BUILD PHASE
+# UVM_INFO monitor_1.sv(12) @ 0: uvm_test_top.env_h.agt_h_1.mon_h_1 [MONITOR_1] MONITOR_1 BUILD PHASE
+# UVM_INFO monitor_1.sv(13) @ 0: uvm_test_top.env_h.agt_h_1.mon_h_1 [MONITOR_1] MONITOR_1 BUILD PHASE
+# UVM_INFO agent.sv(31) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM AGENT CONNECT PHASE WITH MEDIUM
+# UVM_INFO agent.sv(31) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM AGENT CONNECT PHASE WITH MEDIUM
+# UVM_INFO agent_1.sv(21) @ 0: uvm_test_top.env_h.agt_h_1 [agt_h_1] MESSAGE FROM AGENT_1
+# UVM_FATAL @ 0: reporter [BUILDERR] stopping due to build errors
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   43
+# UVM_WARNING :    0
+# UVM_ERROR :    2
+# UVM_FATAL :    1
+# ** Report counts by id
+# []     2
+# [AGENT]    12
+# [AGENT_1]     1
+# [BUILDERR]     1
+# [DRIVER]    10
+# [MONITOR]     4
+# [MONITOR_1]     4
+# [Questa UVM]     2
+# [RNTST]     1
+# [agent]     2
+# [agt_h_1]     1
+# [env_h]     1
+# [monitor]     2
+# [phases_test]     1
+# [uvm_test_top.env_h.agh_2.sqr_h]     1
+# [uvm_test_top.env_h.agt_h.sqr_h]     1
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_report_object.svh(292)
+#    Time: 0 ns  Iteration: 21  Region: /uvm_pkg::uvm_phase::m_run_phases
+# 1
+# Break in Function uvm_pkg/uvm_report_object::die at C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_report_object.svh line 292
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 18:53:35 on Oct 02,2024
+# vlog -reportprogress 300 top.sv 
+# ** Note: (vlog-2286) top.sv(2): Using implicit +incdir+C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 18:53:35 on Oct 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:53:40 on Oct 02,2024, Elapsed time: 0:03:28
+# Errors: 0, Warnings: 1
+# vsim work.top "+UVM_VERBOSITY=UVM_HIGH" "+UVM_TESTNAME=phases_test" "+count_no=50" -l run.log 
+# Start time: 18:53:40 on Oct 02,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /top File: top.sv Line: 22
+# Loading C:/questasim64_10.7c/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test phases_test...
+# UVM_INFO phases_test.sv(14) @ 0: uvm_test_top [phases_test] MESSAGE FROM TEST BUILD PHASE WITH NONE
+# UVM_INFO environment.sv(17) @ 0: uvm_test_top.env_h [env_h] MESSAGE IS FROM ENVIRONMENT BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(17) @ 0: uvm_test_top.env_h.agh_2 [agent] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(19) @ 0: uvm_test_top.env_h.agh_2 [] MESSAGE TO BE WRITTEN
+# UVM_INFO agent.sv(21) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(22) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(23) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(24) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(25) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO mem_driver.sv(16) @ 0: uvm_test_top.env_h.agh_2.drv_h [DRIVER] Config_db getting)
+# UVM_INFO mem_driver.sv(19) @ 0: uvm_test_top.env_h.agh_2.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH NONE
+# UVM_INFO mem_driver.sv(20) @ 0: uvm_test_top.env_h.agh_2.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH LOW
+# UVM_INFO mem_driver.sv(21) @ 0: uvm_test_top.env_h.agh_2.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH MEDIUM
+# UVM_INFO mem_driver.sv(22) @ 0: uvm_test_top.env_h.agh_2.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH HIGH
+# UVM_INFO monitor.sv(17) @ 0: uvm_test_top.env_h.agh_2.mon_h [monitor] message is from monitor build phase with none
+# UVM_INFO monitor.sv(18) @ 0: uvm_test_top.env_h.agh_2.mon_h [MONITOR] MESSAGE IS FROM MONITOR BUILD PHASE WITH NONE
+# UVM_INFO monitor.sv(19) @ 0: uvm_test_top.env_h.agh_2.mon_h [MONITOR] MESSAGE IS FROM MONITOR BUILD PHASE WITH LOW
+# UVM_ERROR mem_sequencer.sv(10) @ 0: uvm_test_top.env_h.agh_2.sqr_h [uvm_test_top.env_h.agh_2.sqr_h] not retriving the config_db
+# UVM_INFO agent.sv(17) @ 0: uvm_test_top.env_h.agt_h [agent] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(19) @ 0: uvm_test_top.env_h.agt_h [] MESSAGE TO BE WRITTEN
+# UVM_INFO agent.sv(21) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(22) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(23) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(24) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(25) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO mem_driver.sv(16) @ 0: uvm_test_top.env_h.agt_h.drv_h [DRIVER] Config_db getting)
+# UVM_INFO mem_driver.sv(19) @ 0: uvm_test_top.env_h.agt_h.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH NONE
+# UVM_INFO mem_driver.sv(20) @ 0: uvm_test_top.env_h.agt_h.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH LOW
+# UVM_INFO mem_driver.sv(21) @ 0: uvm_test_top.env_h.agt_h.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH MEDIUM
+# UVM_INFO mem_driver.sv(22) @ 0: uvm_test_top.env_h.agt_h.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH HIGH
+# UVM_INFO monitor.sv(17) @ 0: uvm_test_top.env_h.agt_h.mon_h [monitor] message is from monitor build phase with none
+# UVM_INFO monitor.sv(18) @ 0: uvm_test_top.env_h.agt_h.mon_h [MONITOR] MESSAGE IS FROM MONITOR BUILD PHASE WITH NONE
+# UVM_INFO monitor.sv(19) @ 0: uvm_test_top.env_h.agt_h.mon_h [MONITOR] MESSAGE IS FROM MONITOR BUILD PHASE WITH LOW
+# UVM_INFO mem_sequencer.sv(14) @ 0: uvm_test_top.env_h.agt_h.sqr_h [uvm_test_top.env_h.agt_h.sqr_h] value=vt_41
+# UVM_INFO agent_1.sv(15) @ 0: uvm_test_top.env_h.agt_h_1 [AGENT_1] AGENT_1 BUILD_PHASE
+# UVM_INFO monitor_1.sv(10) @ 0: uvm_test_top.env_h.agt_h_1.mon_h_1 [MONITOR_1] MONITOR_1 BUILD PHASE
+# UVM_INFO monitor_1.sv(11) @ 0: uvm_test_top.env_h.agt_h_1.mon_h_1 [MONITOR_1] MONITOR_1 BUILD PHASE
+# UVM_INFO monitor_1.sv(12) @ 0: uvm_test_top.env_h.agt_h_1.mon_h_1 [MONITOR_1] MONITOR_1 BUILD PHASE
+# UVM_INFO monitor_1.sv(13) @ 0: uvm_test_top.env_h.agt_h_1.mon_h_1 [MONITOR_1] MONITOR_1 BUILD PHASE
+# UVM_INFO agent.sv(31) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM AGENT CONNECT PHASE WITH MEDIUM
+# UVM_INFO agent.sv(31) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM AGENT CONNECT PHASE WITH MEDIUM
+# UVM_INFO agent_1.sv(21) @ 0: uvm_test_top.env_h.agt_h_1 [agt_h_1] MESSAGE FROM AGENT_1
+# UVM_FATAL @ 0: reporter [BUILDERR] stopping due to build errors
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   44
+# UVM_WARNING :    0
+# UVM_ERROR :    1
+# UVM_FATAL :    1
+# ** Report counts by id
+# []     2
+# [AGENT]    12
+# [AGENT_1]     1
+# [BUILDERR]     1
+# [DRIVER]    10
+# [MONITOR]     4
+# [MONITOR_1]     4
+# [Questa UVM]     2
+# [RNTST]     1
+# [agent]     2
+# [agt_h_1]     1
+# [env_h]     1
+# [monitor]     2
+# [phases_test]     1
+# [uvm_test_top.env_h.agh_2.sqr_h]     1
+# [uvm_test_top.env_h.agt_h.sqr_h]     1
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_report_object.svh(292)
+#    Time: 0 ns  Iteration: 21  Region: /uvm_pkg::uvm_phase::m_run_phases
+# 1
+# Break in Function uvm_pkg/uvm_report_object::die at C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_report_object.svh line 292
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 18:54:35 on Oct 02,2024
+# vlog -reportprogress 300 top.sv 
+# ** Note: (vlog-2286) top.sv(2): Using implicit +incdir+C:/questasim64_10.7c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 18:54:36 on Oct 02,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 18:54:41 on Oct 02,2024, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 1
+# vsim work.top "+UVM_VERBOSITY=UVM_HIGH" "+UVM_TESTNAME=phases_test" "+count_no=50" -l run.log 
+# Start time: 18:54:41 on Oct 02,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /top File: top.sv Line: 22
+# Loading C:/questasim64_10.7c/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test phases_test...
+# UVM_INFO phases_test.sv(14) @ 0: uvm_test_top [phases_test] MESSAGE FROM TEST BUILD PHASE WITH NONE
+# UVM_INFO environment.sv(17) @ 0: uvm_test_top.env_h [env_h] MESSAGE IS FROM ENVIRONMENT BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(17) @ 0: uvm_test_top.env_h.agh_2 [agent] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(19) @ 0: uvm_test_top.env_h.agh_2 [] MESSAGE TO BE WRITTEN
+# UVM_INFO agent.sv(21) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(22) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(23) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(24) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(25) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO mem_driver.sv(16) @ 0: uvm_test_top.env_h.agh_2.drv_h [DRIVER] Config_db getting)
+# UVM_INFO mem_driver.sv(19) @ 0: uvm_test_top.env_h.agh_2.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH NONE
+# UVM_INFO mem_driver.sv(20) @ 0: uvm_test_top.env_h.agh_2.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH LOW
+# UVM_INFO mem_driver.sv(21) @ 0: uvm_test_top.env_h.agh_2.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH MEDIUM
+# UVM_INFO mem_driver.sv(22) @ 0: uvm_test_top.env_h.agh_2.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH HIGH
+# UVM_INFO monitor.sv(17) @ 0: uvm_test_top.env_h.agh_2.mon_h [monitor] message is from monitor build phase with none
+# UVM_INFO monitor.sv(18) @ 0: uvm_test_top.env_h.agh_2.mon_h [MONITOR] MESSAGE IS FROM MONITOR BUILD PHASE WITH NONE
+# UVM_INFO monitor.sv(19) @ 0: uvm_test_top.env_h.agh_2.mon_h [MONITOR] MESSAGE IS FROM MONITOR BUILD PHASE WITH LOW
+# UVM_ERROR mem_sequencer.sv(10) @ 0: uvm_test_top.env_h.agh_2.sqr_h [uvm_test_top.env_h.agh_2.sqr_h] not retriving the config_db
+# UVM_INFO agent.sv(17) @ 0: uvm_test_top.env_h.agt_h [agent] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(19) @ 0: uvm_test_top.env_h.agt_h [] MESSAGE TO BE WRITTEN
+# UVM_INFO agent.sv(21) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(22) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(23) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(24) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO agent.sv(25) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM BUILD PHASE WITH NONE
+# UVM_INFO mem_driver.sv(16) @ 0: uvm_test_top.env_h.agt_h.drv_h [DRIVER] Config_db getting)
+# UVM_INFO mem_driver.sv(19) @ 0: uvm_test_top.env_h.agt_h.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH NONE
+# UVM_INFO mem_driver.sv(20) @ 0: uvm_test_top.env_h.agt_h.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH LOW
+# UVM_INFO mem_driver.sv(21) @ 0: uvm_test_top.env_h.agt_h.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH MEDIUM
+# UVM_INFO mem_driver.sv(22) @ 0: uvm_test_top.env_h.agt_h.drv_h [DRIVER] MESSAGE IS FROM DRIVER BUILD PHASE WITH HIGH
+# UVM_INFO monitor.sv(17) @ 0: uvm_test_top.env_h.agt_h.mon_h [monitor] message is from monitor build phase with none
+# UVM_INFO monitor.sv(18) @ 0: uvm_test_top.env_h.agt_h.mon_h [MONITOR] MESSAGE IS FROM MONITOR BUILD PHASE WITH NONE
+# UVM_INFO monitor.sv(19) @ 0: uvm_test_top.env_h.agt_h.mon_h [MONITOR] MESSAGE IS FROM MONITOR BUILD PHASE WITH LOW
+# UVM_INFO mem_sequencer.sv(14) @ 0: uvm_test_top.env_h.agt_h.sqr_h [uvm_test_top.env_h.agt_h.sqr_h] value=vt_47
+# UVM_INFO agent_1.sv(15) @ 0: uvm_test_top.env_h.agt_h_1 [AGENT_1] AGENT_1 BUILD_PHASE
+# UVM_INFO monitor_1.sv(10) @ 0: uvm_test_top.env_h.agt_h_1.mon_h_1 [MONITOR_1] MONITOR_1 BUILD PHASE
+# UVM_INFO monitor_1.sv(11) @ 0: uvm_test_top.env_h.agt_h_1.mon_h_1 [MONITOR_1] MONITOR_1 BUILD PHASE
+# UVM_INFO monitor_1.sv(12) @ 0: uvm_test_top.env_h.agt_h_1.mon_h_1 [MONITOR_1] MONITOR_1 BUILD PHASE
+# UVM_INFO monitor_1.sv(13) @ 0: uvm_test_top.env_h.agt_h_1.mon_h_1 [MONITOR_1] MONITOR_1 BUILD PHASE
+# UVM_INFO agent.sv(31) @ 0: uvm_test_top.env_h.agh_2 [AGENT] MESSAGE IS FROM AGENT CONNECT PHASE WITH MEDIUM
+# UVM_INFO agent.sv(31) @ 0: uvm_test_top.env_h.agt_h [AGENT] MESSAGE IS FROM AGENT CONNECT PHASE WITH MEDIUM
+# UVM_INFO agent_1.sv(21) @ 0: uvm_test_top.env_h.agt_h_1 [agt_h_1] MESSAGE FROM AGENT_1
+# UVM_FATAL @ 0: reporter [BUILDERR] stopping due to build errors
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   44
+# UVM_WARNING :    0
+# UVM_ERROR :    1
+# UVM_FATAL :    1
+# ** Report counts by id
+# []     2
+# [AGENT]    12
+# [AGENT_1]     1
+# [BUILDERR]     1
+# [DRIVER]    10
+# [MONITOR]     4
+# [MONITOR_1]     4
+# [Questa UVM]     2
+# [RNTST]     1
+# [agent]     2
+# [agt_h_1]     1
+# [env_h]     1
+# [monitor]     2
+# [phases_test]     1
+# [uvm_test_top.env_h.agh_2.sqr_h]     1
+# [uvm_test_top.env_h.agt_h.sqr_h]     1
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_report_object.svh(292)
+#    Time: 0 ns  Iteration: 21  Region: /uvm_pkg::uvm_phase::m_run_phases
+# 1
+# Break in Function uvm_pkg/uvm_report_object::die at C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_report_object.svh line 292
+# End time: 18:57:14 on Oct 02,2024, Elapsed time: 0:02:33
+# Errors: 0, Warnings: 1

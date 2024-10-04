@@ -1,0 +1,7 @@
+#vdel -all -lib work
+vlib work 
+vlog top.sv
+vsim work.top +UVM_VERBOSITY=UVM_HIGH +UVM_TESTNAME=phases_test +count_no=50 -l run.log
+run -all
+
+# +name=VT_39 +data=vlsi

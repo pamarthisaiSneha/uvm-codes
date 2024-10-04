@@ -1,0 +1,26 @@
+class environment extends uvm_env;
+
+`uvm_component_utils(environment)
+agent agt_h,agh_2;
+agent_1 agt_h_1;
+
+	string value = "vt_41";
+
+function new(string name,uvm_component parent);
+        super.new(name,parent);    
+    endfunction
+
+    function void build_phase(uvm_phase phase);
+        agt_h = agent::type_id::create("agt_h",this);
+        agt_h_1 = agent_1::type_id::create("agt_h_1",this);
+        agh_2 = agent :: type_id :: create("agh_2",this);
+        `uvm_info(get_name(),"MESSAGE IS FROM ENVIRONMENT BUILD PHASE WITH NONE",UVM_NONE)
+	    uvm_config_db #(string) :: set(this,"agt_h.sqr_h","value",value);
+    endfunction
+
+    function void end_of_elaboration_phase(uvm_phase phase);
+        uvm_top.print_topology();
+        `uvm_info(get_full_name(),"END OF ELABORATION",UVM_LOW)
+        `uvm_info("ENVIRONMENT","ENVIRONMENT FUNCTION",UVM_HIGH)
+    endfunction
+endclass        

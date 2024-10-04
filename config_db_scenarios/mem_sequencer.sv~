@@ -1,0 +1,17 @@
+class mem_sequencer extends uvm_sequencer #(sequence_item);
+	//string value;
+`uvm_component_utils(mem_sequencer)
+    function new(string name,uvm_component parent);
+        super.new(name,parent);    
+    endfunction
+	function void build_phase(uvm_phase phase);
+	//if(!uvm_config_db #(string) :: get(this,"","value",value))
+	//begin
+	//	`uvm_error(get_full_name(),"not retriving the config_db")
+	//end
+	//	else
+	//	begin
+	//		`uvm_info(get_full_name(),$sformatf("value=%s",value),UVM_LOW)
+	//	end
+	endfunction
+endclass
